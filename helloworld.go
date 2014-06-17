@@ -1,27 +1,12 @@
 package main
 
-import (
-	"errors"
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	s := "Hello world"
-
-	fmt.Println(s)
-
-	s, i, err := returnMany()
-
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Println(s, i, err)
+	fmt.Println("Hello world")
 }
 
-func returnMany() (string, int, error) {
-
-	e := errors.New("Oh no")
-	return "foo", 123, e
-}
+// func returnMany() (string, int, bool) {
+// 	return "foo", 123, true
+// }
